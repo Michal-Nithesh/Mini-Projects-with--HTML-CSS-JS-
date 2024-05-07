@@ -1,0 +1,286 @@
+/*Javascriptpro_*
+
+/*Dont forget to follow me on github,instagram and codepen.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+
+margin:0;  
+
+padding:0;
+
+box-sizing:border-box;
+
+} 
+
+body{
+
+background:#353535;  
+
+font-family: 'poppins', sans-serif;
+
+}
+
+.container{
+
+padding:20px;  
+
+width:340px;
+
+background:#181818;
+
+border-radius:7px;
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+overflow:hidden;
+
+border:1.2px solid #DCDCDC;
+
+}
+
+.container .user-input input{
+
+all:unset;  
+
+height:40px;
+
+width:100%;
+
+border-bottom:1.7px solid #44FAAF;
+
+padding-left:3px;
+
+font-size:15px;
+
+color:#DCDCDC;
+
+}
+
+.container .user-input input::placeholder{
+
+color:#DCDCDC;       
+
+}
+
+.container .color-box{
+
+height:40px; 
+
+width:100%;
+
+margin-top:10px;
+
+}
+
+.container .color-box div{
+
+height:40px; 
+
+width:116px;
+
+float:left;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.container .color-box .bg-color{
+
+margin-left:62px; 
+
+position:relative;
+
+left:7px;
+
+}
+
+.container .color-box div input{
+
+all:unset; 
+
+height:30px;
+
+width:85px;
+
+border-bottom:1.7px solid #44FAAF;
+
+position:absolute;
+
+text-align:center;
+
+color:#DCDCDC;
+
+}
+
+.container .color-box div div{
+
+height:22px; 
+
+width:22px;
+
+background:red;
+
+border-radius:3px;
+
+position:absolute;
+
+margin-left:95px;
+
+}
+
+.container .color-box .line-color div{
+
+background:#000000;
+
+border:1.4px solid #fff;
+
+}
+
+.container .color-box .bg-color div{
+
+background:#FFFFFF;  
+
+border:1.4px solid black;
+
+}
+
+.container .btns{
+
+height:40px;
+
+margin-top:10px;
+
+}
+
+.container .generate-btn,.container  .download-btn{
+
+all:unset; 
+
+height:35px;
+
+width:45%;
+
+border:2px solid #DCDCDC;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:#DCDCDC;
+
+border-radius:3px;
+
+cursor:pointer;
+
+float:left;
+
+}
+
+.container .generate-btn{
+
+width:100%;       
+
+}
+
+.container.active .generate-btn{
+
+width:45%;     
+
+}
+
+.container  .download-btn{
+
+background:#44FAAF;    
+
+color:white;
+
+margin-left:22px;
+
+border-color:#44FAAF;
+
+transition:all .4s;
+
+display:none;
+
+color:#000;
+
+}
+
+.container.active .download-btn{
+
+transition:all .4s;
+
+text-align:center;
+
+display:block;
+
+}
+
+.container .barcode-box{
+
+height:0px;  /*250px*/
+
+width:300px;
+
+border-radius:7px;
+
+margin-top:3px; /*16px*/
+
+padding:0px;/*30*/
+
+transition:all .4s;
+
+overflow:hidden;
+
+}
+
+.container .barcode-box #barcode{
+
+position:absolute;   
+
+left:12%;
+
+height:175px;
+
+width:260px;
+
+margin-top:7px;
+
+display:none;
+
+}
+
+.container .barcode-box.active{
+
+margin-top:16px;
+
+height:250px;  
+
+padding:30px;
+
+border:1.2px solid #44FAAF;
+
+transition:all .4s;
+
+}
+
+::selection {
+
+background:rgb(100, 149, 237, 0.8);
+
+color:white;
+
+}
+
